@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- DEMO MODE: simulated Tortil (app.tortil.com) for the Newton Cinema Phase 2 prototype.
+     Nothing on this page talks to Tortil or any other server. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tortil · Newton Cinema applications (demo)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/icons/40-afv.png">
+<link rel="stylesheet" href="tortil.css">
+</head>
+<body>
+<a class="t-skip" href="#app">Skip to main content</a>
+
+<div class="t-demo-banner" role="note">
+  <p><strong>Demo mode</strong> · Simulated preview of app.tortil.com. Nothing you enter is sent anywhere. Drafts stay in this browser only.</p>
+  <div class="t-demo-actions">
+    <a href="../index.html#your-next-step">Back to Newton Cinema</a>
+    <button type="button" id="t-reset">Reset demo</button>
+  </div>
+</div>
+
+<header class="t-chrome" id="t-chrome" hidden>
+  <a class="t-chrome-brand" href="#/choose" aria-label="Tortil applications home">
+    <img src="../assets/tortil/tortil-logo.svg" alt="" class="t-chrome-tortil">
+  </a>
+  <span class="t-chrome-partner"><span class="t-chrome-with">with</span><img src="../assets/tortil/newton-logo.svg" alt="Newton Cinema" class="t-chrome-newton"></span>
+  <div class="t-user" id="t-user" hidden>
+    <span class="t-user-label">Signed in as <span class="t-user-name"></span></span>
+    <button type="button" class="t-link" id="t-signout">Sign out</button>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<script src="forms.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
